@@ -16,6 +16,13 @@ a{
     text-decoration: none;
     color: inherit;
 }
+
+main{
+    width: 100%;
+}
+.my-container{
+    width: 100%;
+}
 /* CLASSI HEADER */
 header{
     width: 100%;
@@ -64,7 +71,7 @@ li.p-2{
 .dashboard{
     width: calc(100% - 75px);
     
-    background-color: darkgreen;
+    
 }
 
 .height{
@@ -93,10 +100,10 @@ li.p-2{
     background-color: darkred;
 }
 
-.right-dashboard{
+/* .right-dashboard{
     
     background-color: rgb(2, 79, 43);
-}
+} */
 
 .card-list li{
     padding: 0 20px;
@@ -122,11 +129,12 @@ li.p-2{
 @media screen and (min-width:1200px) {
     .side-bar{
         width:150px;
+        height: 100vh;
         
     }
     
     .dashboard{
-        width: calc(100% - 150px);
+        width: calc(100vw - 150px);
         
     }
 }
