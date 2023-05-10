@@ -13,21 +13,28 @@ header{
 
 
 .side-bar{
-    width: 200px;
+    width: 50px;
     height: 1000px;
     background-color: darkslateblue;
 }
 
+.side-bar-menu{
+    height: 50px;
+    background-color: white;
+}
+
 .dashboard{
-    width: calc(100% - 200px);
+    width: calc(100% - 50px);
     height: 1000px;
     background-color: darkgreen;
 }
 
-
+.height{
+    height: 100%;
+}
 .top-bar{
     background-color: brown;
-    height: 250px;
+    height: 100px;
 }
 
 
@@ -39,4 +46,30 @@ header{
 .right-dashboard{
     height: 700px;
     background-color: rgb(2, 79, 43);
+}
+
+.classes{
+    height: 300px;
+    background-color: rgb(41, 2, 79);
+
+}
+.faq{
+    height: 200px;
+    background-color: rgb(79, 2, 58);
+
+}
+
+
+
+
+@media screen and (min-width:1200px) {
+    .side-bar{
+        width:200px;
+        
+    }
+    
+    .dashboard{
+        width: calc(100% - 200px);
+        
+    }
 }
