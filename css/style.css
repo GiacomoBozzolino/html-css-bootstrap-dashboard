@@ -19,6 +19,8 @@ a{
 
 main{
     width: 100%;
+    /* height: calc(100vh); */
+    margin-top: 100px
 }
 .my-container{
     width: 100%;
@@ -51,13 +53,11 @@ li.p-2{
 /* CLASSI SIDE BAR */
 .side-bar{
     width: 75px;
-    
+    height: 100vh;
     color: white;
+    height: calc(100vh - 100px);
     background-color: #051e34;
     background-image: url(../img/sidebar-bg.png);
-   
-    
-
 }
 
 .side-bar-menu ul{
@@ -70,6 +70,9 @@ li.p-2{
 /* CLASSI DASHBOARD */
 .dashboard{
     width: calc(100% - 75px);
+    overflow-y: auto;
+    height: calc(100vh);
+    height: calc(100vh - 100px);
     
     
 }
@@ -129,7 +132,7 @@ li.p-2{
 @media screen and (min-width:1200px) {
     .side-bar{
         width:150px;
-        height: 100vh;
+        
         
     }
     
