@@ -77,10 +77,10 @@ li.p-2{
     width: calc(100% - 75px);
     overflow-y: auto;
     height: calc(100vh);
-    height: calc(100vh - 75px);
-    
-    
+    height: calc(100vh - 75px);   
 }
+
+
 
 .height{
     height: 100%;
@@ -94,6 +94,10 @@ li.p-2{
     
 }
 
+.fa-square-plus{
+    font-size: 40px;
+
+}
 .boolean-tag{
     font-size: 12px;
     background-color: #165bba;
