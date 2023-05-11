@@ -17,30 +17,33 @@
 </head>
     <body>
         <!-- INIZIO HEADER -->
-        <header class="fixed-top ">
+        <header class="fixed-top px-3">
                 <div class="container-fluid">
-                    <div class="row  align-items-center height-row ">
+                    <div class="row  align-items-center height-row justify-content-between">
                         <div class="col-1 d-flex justify-content-center ">
                         <img src="./img/logo.svg" alt="Logo" class=" d-none d-xl-block logo-size">  
                             <img src="./img/mobile-logo.png" alt="Logo" class=" mobile-logo-size  d-block  d-xl-none">   
                         </div>
                         <div class="col-10 ">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> 
+                            <div class="bg-secondary-subtle d-flex align-items-center rounded-4 px-3 py-2">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input class="form-control bg-secondary-subtle p-1" type="search" placeholder=" Prova a cercare: Lezioni di Laravel" aria-label="Search"> 
+                            </div>
                         </div>
                         <div class="col-1">
                                 <ul class="d-flex me-auto  mb-0  justify-content-center">
                                 <li class="p-2 d-none d-xl-block">
                                     <a class="nav-link" href="">
-                                        <i class="fa-solid fa-bars"></i>
+                                        <i class="fa-solid fa-bars link-secondary"></i>
                                     </a>
                                 </li>
                                 <li class="p-2 d-none d-xl-block">
-                                    <a class="nav-link" href="">
+                                    <a class="nav-link link-secondary" href="">
                                         <i class="fa-solid fa-circle-question"></i>
                                     </a>
                                 </li>
                                 <li class="p-2 d-none d-xl-block">
-                                    <a class="nav-link" href="">
+                                    <a class="nav-link link-secondary" href="">
                                         <i class="fa-solid fa-ellipsis-vertical"></i>
                                     </a>
                                 </li>
@@ -119,7 +122,7 @@
                             <div class="content d-flex pt-2">
                                 <div class="pe-2">Nuovo studente</div>
                                 <a  data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight">
-                                    <i class="fa-solid fa-square-plus fa-2xl"></i>
+                                    <i class="fa-regular fa-square-plus fa-2xl" style="color: #ffffff;"></i>
                                 </a>
                               
                             </div>
@@ -153,27 +156,46 @@
                     </div>
                 </div>
                 <!-- FINE TOP-BAR -->
+                <!-- CARDS -->
                 <div class="row m-0">
-                    <div class="col-12 col-xl-8 ">
-                        <div class="content d-flex flex-column align-items-center p-2">
+                    <div class="col-12 col-xl-8 p-2 ">
+                        <div class="content d-flex flex-column align-items-center">
+                            <!-- PRIMA CARD -->
                             <div class="card w-100">
                                 <h3 class="card-header">Prossime classi</h3>
                                 <div class="card-body">
-                                    <table class="table ">
+                                    <!-- INIZIO TABELLA -->
+                                    <table class="table table-responsive ">
                                         <thead>
                                           <tr>
                                             <th  class="w-50" scope="col">Nome</th>
-                                            <th class="text-center" scope="col">Data di inizio</th>
-                                            <th class="text-center" scope="col">Roi</th>
+                                            <th class="text-center" scope="col">
+                                                <div class="d-none d-lg-block">
+                                                    Data di inizio
+                                                </div>
+                                            </th>
+                                            <th class="text-center" scope="col">
+                                                <div class="d-none d-lg-block">
+                                                   Roi
+                                                </div>
+                                            </th>
                                             <th class="text-center" scope="col">Stato</th>
                                             <th class="text-center" scope="col">Azioni</th>
                                           </tr>
                                         </thead>
                                         <tbody>
                                           <tr>
-                                            <td> <i class="fa-solid fa-code"></i> Classe 75</td>
-                                            <td class="text-center">15 Feb 2021</td>
-                                            <td class="text-center">20%</td>
+                                            <td> <i class="fa-solid fa-code bg-warning p-2 rounded-5 " style=color:#ffffff;></i> Classe 75</td>
+                                            <td class="text-center ">
+                                                <div class="d-none d-lg-block">
+                                                    15 Feb 2021 
+                                                </div>
+                                            </td>
+                                            <td class="text-center ">
+                                                <div class="d-none d-lg-block">
+                                                    20%
+                                                </div>
+                                            </td>
                                             <td class="text-center">
                                                 <div class="bg-success rounded-pill ">Done</div>
                                             </td>
@@ -187,9 +209,17 @@
                                             </td>
                                           </tr>
                                           <tr>
-                                            <td> <i class="fa-solid fa-code"></i> Classe 76</td>
-                                            <td class="text-center">15 Feb 2021</td>
-                                            <td class="text-center">20%</td>
+                                            <td> <i class="fa-solid fa-code bg-warning p-2 rounded-5 " style=color:#ffffff;></i> Classe 76</td>
+                                            <td class="text-center ">
+                                                <div class="d-none d-lg-block">
+                                                    15 Feb 2021 
+                                                </div>
+                                            </td>
+                                            <td class="text-center ">
+                                                <div class="d-none d-lg-block">
+                                                    20%
+                                                </div>
+                                            </td>
                                             <td class="text-center">
                                                 <div class="bg-success rounded-pill ">Done</div>
                                             </td>
@@ -203,9 +233,17 @@
                                             </td>
                                           </tr>
                                           <tr>
-                                            <td > <i class="fa-solid fa-code"></i> Classe 77</td>
-                                            <td class="text-center">15 Feb 2021</td>
-                                            <td class="text-center">20%</td>
+                                            <td > <i class="fa-solid fa-code bg-warning p-2 rounded-5 " style=color:#ffffff;></i> Classe 77</td>
+                                            <td class="text-center ">
+                                                <div class="d-none d-lg-block">
+                                                    15 Feb 2021 
+                                                </div>
+                                            </td>
+                                            <td class="text-center ">
+                                                <div class="d-none d-lg-block">
+                                                    20%
+                                                </div>
+                                            </td>
                                             <td class="text-center">
                                                 <div class="bg-warning rounded-pill ">Process</div>
                                             </td>
@@ -219,9 +257,17 @@
                                             </td>
                                           </tr>
                                           <tr>
-                                            <td> <i class="fa-solid fa-code"></i> Classe 78</td>
-                                            <td class="text-center">15 Feb 2021</td>
-                                            <td class="text-center">20%</td>
+                                            <td> <i class="fa-solid fa-code bg-warning p-2 rounded-5 " style=color:#ffffff;></i> Classe 78</td>
+                                            <td class="text-center ">
+                                                <div class="d-none d-lg-block">
+                                                    15 Feb 2021 
+                                                </div>
+                                            </td>
+                                            <td class="text-center ">
+                                                <div class="d-none d-lg-block">
+                                                    20%
+                                                </div>
+                                            </td>
                                             <td class="text-center">
                                                 <div class="bg-danger rounded-pill ">Failed</div>
                                             </td>
@@ -235,9 +281,17 @@
                                             </td>
                                           </tr>
                                           <tr>
-                                            <td > <i class="fa-solid fa-code"></i> Classe 79</td>
-                                            <td class="text-center">15 Feb 2021</td>
-                                            <td class="text-center">20%</td>
+                                            <td > <i class="fa-solid fa-code bg-warning p-2 rounded-5 " style=color:#ffffff;></i> Classe 79</td>
+                                            <td class="text-center ">
+                                                <div class="d-none d-lg-block">
+                                                    15 Feb 2021 
+                                                </div>
+                                            </td>
+                                            <td class="text-center ">
+                                                <div class="d-none d-lg-block">
+                                                    20%
+                                                </div>
+                                            </td>
                                             <td class="text-center">
                                                 <div class="bg-success rounded-pill ">Done</div>
                                             </td>
@@ -251,9 +305,17 @@
                                             </td>
                                           </tr>
                                           <tr>
-                                            <td > <i class="fa-solid fa-code"></i> Classe 80</td>
-                                            <td class="text-center">15 Feb 2021</td>
-                                            <td class="text-center">20%</td>
+                                            <td > <i class="fa-solid fa-code bg-warning p-2 rounded-5 " style=color:#ffffff;></i> Classe 80</td>
+                                            <td class="text-center ">
+                                                <div class="d-none d-lg-block">
+                                                    15 Feb 2021 
+                                                </div>
+                                            </td>
+                                            <td class="text-center ">
+                                                <div class="d-none d-lg-block">
+                                                    20%
+                                                </div>
+                                            </td>
                                             <td class="text-center">
                                                 <div class="bg-danger rounded-pill ">Failed</div>
                                             </td>
@@ -267,9 +329,17 @@
                                             </td>
                                           </tr>
                                           <tr>
-                                            <td > <i class="fa-solid fa-code"></i> Classe 81</td>
-                                            <td class="text-center">15 Feb 2021</td>
-                                            <td class="text-center">20%</td>
+                                            <td > <i class="fa-solid fa-code bg-warning p-2 rounded-5 " style=color:#ffffff;></i> Classe 81</td>
+                                            <td class="text-center ">
+                                                <div class="d-none d-lg-block">
+                                                    15 Feb 2021 
+                                                </div>
+                                            </td>
+                                            <td class="text-center ">
+                                                <div class="d-none d-lg-block">
+                                                    20%
+                                                </div>
+                                            </td>
                                             <td class="text-center">
                                                 <div class="bg-success rounded-pill ">Done</div>
                                             </td>
@@ -283,9 +353,12 @@
                                             </td>
                                           </tr>
                                         </tbody>
-                                      </table> 
+                                    </table> 
+                                      <!-- FINE TABELLA -->
                                 </div>
                             </div>
+                            <!-- FINE PRIMA CARD -->
+                            <!-- SECONDA CARD -->
                             <div class="card w-100 mt-4">
                                 <h3 class="card-header">F.A.Q.</h3>
                                 <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -323,6 +396,8 @@
                             </div>
                         </div>
                     </div>
+                    <!-- FINE SECONDA CARD -->
+                    <!-- TERZA CARD -->
                     <div class="col 12 col-xl-4 p-2">
                         <div class="content right-dashboard d-flex flex-column align-items-center">
                             <div class="card w-100">
@@ -341,7 +416,8 @@
                                     </li>
                                 </ul>
                             </div>
-                            
+                            <!-- FINE TERZA CARD -->
+                            <!-- QUARTA CARD -->
                             <div class="card mt-4">
                                 <img src="./img/stats.jpeg" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -357,99 +433,102 @@
                                     <a href="#" class="card-link link-underline-primary ">Visulizza report approfondito</a>
                                     
                                 </div>
-                            </div>   
+                            </div>  
+                             <!--FINE QUARTA CARD  -->
                         </div>
                     </div>
                 </div> 
             </div>             
         </main>
         <!-- OFFCANVAS -->
-        <div class="offcanvas offcanvas-end "  offcanvas-width: tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
               <div class="row">
-                <div class="col-6">
+                <div class="col-6 p-1">
                     <label for="name" class="form-label">Nome</label>
                      <div class="input-group">
                         <input type="text" class="form-control "  aria-label="name" aria-describedby="basic-addon1">
                      </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6 p-1">
                     <label for="surname" class="form-label">Cognome</label>
                      <div class="input-group">
                         <input type="text" class="form-control"  aria-label="surname" aria-describedby="basic-addon1">
                      </div>
                 </div>
-                <div class="col-6">
-                    <label for="name" class="form-label">Nome</label>
+                <div class="col-6 p-1">
+                    <label for="email" class="form-label">Email</label>
                      <div class="input-group">
-                        <input type="text" class="form-control "  aria-label="name" aria-describedby="basic-addon1">
+                        <span class="input-group-text" id="basic-addon2">@</span>
+                        <input type="email" class="form-control "  aria-label="email" aria-describedby="basic-addon1">
                      </div>
                 </div>
-                <div class="col-6">
-                    <label for="surname" class="form-label">Cognome</label>
+                <div class="col-6 p-1">
+                    <label for="password" class="form-label">Password</label>
                      <div class="input-group">
-                        <input type="text" class="form-control"  aria-label="surname" aria-describedby="basic-addon1">
+                        <input type="passowrd" class="form-control"  aria-label="password" aria-describedby="basic-addon1">
                      </div>
                 </div>
-                <div class="col-6">
-                    <label for="name" class="form-label">Nome</label>
+                <div class="col-6 p-1">
+                    <label for="email" class="form-label">Email</label>
                      <div class="input-group">
-                        <input type="text" class="form-control "  aria-label="name" aria-describedby="basic-addon1">
+                        <span class="input-group-text" id="basic-addon2">@</span>
+                        <input type="email" class="form-control "  aria-label="email" aria-describedby="basic-addon1">
                      </div>
                 </div>
-                <div class="col-6">
-                    <label for="surname" class="form-label">Cognome</label>
+                <div class="col-6 p-1">
+                    <label for="password" class="form-label">Password</label>
+                    <div class="input-group">
+                       <input type="passowrd" class="form-control"  aria-label="password" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="col-12 p-1">
+                    <label for="text" class="form-label">Indirizzo</label>
                      <div class="input-group">
-                        <input type="text" class="form-control"  aria-label="surname" aria-describedby="basic-addon1">
+                        <input type="text" class="form-control"  aria-label="text" aria-describedby="basic-addon1">
                      </div>
                 </div>
-                <div class="col-12">
-                    <label for="surname" class="form-label">Cognome</label>
+                <div class="col-4 p-1">
+                    <label for="text" class="form-label">Città</label>
                      <div class="input-group">
-                        <input type="text" class="form-control"  aria-label="surname" aria-describedby="basic-addon1">
+                        <input type="text" class="form-control"  aria-label="text" aria-describedby="basic-addon1">
                      </div>
                 </div>
-              
-                <div class="col-4">
-                    <label for="surname" class="form-label">Cognome</label>
+                <div class="col-4 p-1">
+                    <label for="text" class="form-label">Stato</label>
                      <div class="input-group">
-                        <input type="text" class="form-control"  aria-label="surname" aria-describedby="basic-addon1">
+                        <select name="Stato" id="stato" class="form-control">
+                            <option value="0">Scegli...</option>
+                            <option value="1">Italia</option>
+                            <option value="2">Francia</option>
+                            <option value="3">Germania</option>
+                        </select>
                      </div>
                 </div>
-                <div class="col-4">
-                    <label for="surname" class="form-label">Cognome</label>
+                <div class="col-4 p-1">
+                    <label for="text" class="form-label">Cap</label>
                      <div class="input-group">
-                        <input type="text" class="form-control"  aria-label="surname" aria-describedby="basic-addon1">
+                        <input type="text" class="form-control"  aria-label="text" aria-describedby="basic-addon1">
                      </div>
                 </div>
-                <div class="col-4">
-                    <label for="surname" class="form-label">Cognome</label>
+                <div class="col-12 p-1">
+                    <label for="file" class="form-label">Foto</label>
                      <div class="input-group">
-                        <input type="text" class="form-control"  aria-label="surname" aria-describedby="basic-addon1">
+                        <input type="file" class="form-control"  aria-label="file" aria-describedby="basic-addon1">
                      </div>
                 </div>
-                <div class="col-12">
-                    <label for="surname" class="form-label">Cognome</label>
-                     <div class="input-group">
-                        <input type="text" class="form-control"  aria-label="surname" aria-describedby="basic-addon1">
-                     </div>
-                </div>
-                <div class="col-12">
-                    
-                    <div>
+                <div class="col-12 p-1">
+                    <div class="pb-2">
                         <input type="checkbox" name="" id=""> Seleziona per proseguire
                     </div>
-                    <button class="btn">Salva</button>
-                    <button class="btn">Svuota</button>
+                    <button class="btn btn-primary">Salva</button>
+                    <button class="btn btn-warning">Svuota</button>
                 </div>
-
-
               </div>
-
             </div>
           </div>
     </body>
