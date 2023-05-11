@@ -12,10 +12,10 @@ ul{
     list-style-type: none;
 }
 
-a{
+/* a{
     text-decoration: none;
     color: inherit;
-}
+} */
 
 main{
     width: 100%;
@@ -28,7 +28,7 @@ main{
 /* CLASSI HEADER */
 header{
     width: 100%;
-    height: 75px;
+    height: 100px;
     background-color: white;
     
 }
@@ -66,6 +66,11 @@ li.p-2{
 .icon{
     width: 30px;
    
+}
+
+
+.side-bar-link:hover{
+    background-color: gray;
 }
 /* CLASSI DASHBOARD */
 .dashboard{
