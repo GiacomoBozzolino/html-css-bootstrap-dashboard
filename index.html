@@ -118,7 +118,10 @@
                         <div class="col-12 col-lg-3 col-xl-2 order-1 order-lg-3 align-self-start pt-2 ">
                             <div class="content d-flex pt-2">
                                 <div class="pe-2">Nuovo studente</div>
-                                <div><i class="fa-solid fa-square-plus fa-2xl"></i></div>
+                                <a  data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight">
+                                    <i class="fa-solid fa-square-plus fa-2xl"></i>
+                                </a>
+                              
                             </div>
                         </div>
                         <div class="col-12 col-lg-4 col-xl-6 order-2 order-lg-1 pt-2">
@@ -350,5 +353,15 @@
                 </div> 
             </div>             
         </main>
+        <!-- OFFCANVAS -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              ...
+            </div>
+          </div>
     </body>
 </html>
