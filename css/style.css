@@ -131,18 +131,21 @@ li.p-2{
 
 }
 
-
+/* CLASSI OFFCANVAS */
+#offcanvasRight{
+    width: 100vw;
+}
 
 
 @media screen and (min-width:1200px) {
     .side-bar{
-        width:150px;
-        
-        
+        width:150px;  
     }
     
     .dashboard{
-        width: calc(100vw - 150px);
-        
+        width: calc(100vw - 150px);   
+    }
+    #offcanvasRight{
+        width:40vw;
     }
 }
